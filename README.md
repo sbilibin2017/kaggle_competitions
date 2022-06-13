@@ -28,14 +28,14 @@
 |____ dictionaries
     |____ team_all_stats_and_location
     |____ team_map_info_stats
-	|____ team_game_month_stats
-	|____ team_game_hour_stats
-	|____ team_all_pair_stats
-	|____ player_all_stats
-	|____ player_info_passport
-	|____ player_map_info_stats
-	|____ player_game_month_stats
-	|____ player_game_hour_stats    
+    |____ team_game_month_stats
+    |____ team_game_hour_stats
+    |____ team_all_pair_stats
+    |____ player_all_stats
+    |____ player_info_passport
+    |____ player_map_info_stats
+    |____ player_game_month_stats
+    |____ player_game_hour_stats    
 |____ data_model_metrics    
     |____ data_gen
     |____ metrics
