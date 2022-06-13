@@ -27,7 +27,7 @@
     |____ out
 |____ dictionaries
     |____ team_all_stats_and_location
-	|____ team_map_info_stats
+    |____ team_map_info_stats
 	|____ team_game_month_stats
 	|____ team_game_hour_stats
 	|____ team_all_pair_stats
