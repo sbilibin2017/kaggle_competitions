@@ -1,34 +1,47 @@
 # ПРЕДСКАЗАНИЕ ПОБЕДИТЕЛЯ В ТУРНИРНОЙ ИГРЕ ПО CS:GO
 
 ## методы API
-<img src="api.png">
 
-1. GET parse_games - запускает парсер PandaScore
-2. GET refit_model - обучает модель на новых играх
-3. GET teams - словарь с командами, участвовавшими в обучении
-4. GET players - словарь с игроками, участвовавшими в обучении
-5. GET maps - словарь с картами, участвовавшими в обучении
-6. GET metrics - словарь с точностью модели
-6. POST prediction  - вероятность победы команды 1
+src="api.png"
+
+1. GET teams - словарь с командами, участвовавшими в обучении
+2. GET players - словарь с игроками, участвовавшими в обучении
+3. GET maps - словарь с картами, участвовавшими в обучении
+4. GET accuracy - точность модели
+4. GET update - дообучение модели на новых играх
+5. POST prediction  - вероятность победы команды 1
 
 ## структура:
 
 ```
 .
-|____ game_in
-|____ game_out
-|____ game_not_valid
-|____ game_preprocessed_split
+|____ games
+    |____ in
+    |____ new
+    |____ not_valid
+    |____ out
 |____ dictionaries
-|____ data
-|____ src
-    |____ parser.py
-    |____ scripts.py
-    |____ winner_prediction4map.py
-    |____ app.py
+    |____ team_all_stats_and_location
+	|____ team_map_info_stats
+	|____ team_game_month_stats
+	|____ team_game_hour_stats
+	|____ team_all_pair_stats
+	|____ player_all_stats
+	|____ player_info_passport
+	|____ player_map_info_stats
+	|____ player_game_month_stats
+	|____ player_game_hour_stats
+|____ data_model_metrics    
+    |____ data_gen
+    |____ metrics
+    |____ model
+    |____ data_train
+    |____ data_test
+|____ parser.py
+|____ pipeline.py
+|____ modules
 |____ requirements.txt
 |____ Dockerfile
 |____ README.md
-|____ api.png
 
 ```
