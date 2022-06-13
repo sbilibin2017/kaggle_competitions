@@ -35,7 +35,7 @@
 	|____ player_info_passport
 	|____ player_map_info_stats
 	|____ player_game_month_stats
-	|____ player_game_hour_stats
+	|____ player_game_hour_stats    
 |____ data_model_metrics    
     |____ data_gen
     |____ metrics
@@ -45,6 +45,7 @@
 |____ parser.py
 |____ pipeline.py
 |____ modules
+|____ app.py
 |____ requirements.txt
 |____ Dockerfile
 |____ README.md
