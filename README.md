@@ -17,7 +17,8 @@
 .
 |____ games
     |____ in
-    |____ new
+    |____ new_in
+    |____ new_out
     |____ not_valid
     |____ out
 |____ dictionaries
@@ -49,4 +50,4 @@
 ## инструкция:
 1. установка зависмостей: ```pip install -r requirements.txt```
 2. запуск парсера PandaScore: ```parser.py```
-3. запуск пайплайна и апи: ```python pipeline.py && python app.py```
+3. запуск пайплайна и апи: ```python pipeline.py && uvicorn app:app --reload```
