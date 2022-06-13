@@ -49,5 +49,4 @@
 ## инструкция:
 1. установка зависмостей: ```pip install -r requirements.txt```
 2. запуск парсера PandaScore: ```parser.py```
-3. запуск пайплайна: ```python pipeline.py```
-4. запуск апи: ```python app.py```
+3. запуск пайплайна и апи: ```python pipeline.py && python app.py```
